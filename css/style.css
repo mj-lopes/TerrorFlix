@@ -59,7 +59,7 @@ body {
   background: black;
   transition: 0.3s;
 
-  border-bottom: 10px solid;
+  border-bottom: solid;
   border-image-slice: 1;
   border-width: 3px;
 
@@ -157,6 +157,7 @@ button[data-menuMobile].ativo span::after {
 .header .container nav a {
   border-bottom: 3px solid transparent;
   border-radius: 2px;
+  outline: none;
 
   transition: 0.4s;
 }
@@ -307,15 +308,52 @@ button[data-menuMobile].ativo span::after {
   cursor: pointer;
   max-width: 300px;
   aspect-ratio: 1/1;
+  margin: auto;
 }
 
 .box-livro {
-  height: 100%;
-  width: 100%;
   display: block;
   cursor: pointer;
 }
 
 .carrosel-livro {
   margin-top: 2rem;
+}
+
+.owl-dots {
+  display: none;
+}
+
+.footer {
+  margin-top: 5rem;
+  padding: 2rem 0;
+
+  border-top: solid;
+  border-image-slice: 1;
+  border-width: 3px;
+
+  border-image-source: linear-gradient(
+    90deg,
+    #046000,
+    #066b00,
+    #087500,
+    #0b8000,
+    #0e8b00,
+    #119700,
+    #14a200
+  );
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .container p {
+  font-family: var(--fonteCorpo);
+}
+
+.footer .container p:first-of-type {
+  font-size: 2rem;
 }
